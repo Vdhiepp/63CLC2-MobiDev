@@ -61,7 +61,8 @@
                 android:textSize="40dp"
                 android:background="@drawable/custom_button"
                 android:textColor="#000"
-                android:text="+" />
+                android:text="+"
+                android:onClick="XuLy_Cong"/>
 
             <Button
                 android:id="@+id/tru"
@@ -72,7 +73,8 @@
                 android:textSize="40dp"
                 android:background="@drawable/custom_button"
                 android:textColor="#000"
-                android:text="-" />
+                android:text="-"
+                android:onClick="XuLy_Tru"/>
 
             <Button
                 android:id="@+id/nhan"
@@ -83,7 +85,8 @@
                 android:textSize="40dp"
                 android:background="@drawable/custom_button"
                 android:textColor="#000"
-                android:text="*" />
+                android:text="*"
+                android:onClick="XuLy_Nhan" />
 
             <Button
                 android:id="@+id/chia"
@@ -93,19 +96,20 @@
                 android:textSize="40dp"
                 android:background="@drawable/custom_button"
                 android:textColor="#000"
-                android:text="/" />
+                android:text="/"
+                android:onClick="XuLy_Chia" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/status"
+            android:id="@+id/kqua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:textColor="#6D7070"
-            android:text="10.0 * 5.0 = 50.0" />
+            android:text="" />
 
     </LinearLayout>
 
