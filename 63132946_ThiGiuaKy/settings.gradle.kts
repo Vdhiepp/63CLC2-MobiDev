@@ -13,7 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ViDuIntentDonGian"
-include(":app")
+rootProject.name = "63132946_ThiGiuaKy"
 include(":app")
  
