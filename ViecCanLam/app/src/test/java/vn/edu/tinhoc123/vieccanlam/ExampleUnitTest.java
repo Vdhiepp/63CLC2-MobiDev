@@ -1,4 +1,4 @@
-package vn.vodaihiep.vieccanlam;
+package vn.edu.tinhoc123.vieccanlam;
 
 import org.junit.Test;
 
