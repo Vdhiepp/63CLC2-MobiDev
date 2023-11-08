@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 for (DataSnapshot obj: snapshot.getChildren()  ) {
                     TASKS tasks = obj.getValue(TASKS.class);
                     lstVCL.add(tasks);
-                    Log.w("VCL app", "Tên việc cần làm : "+ tasks.getName()  );
+                    Log.w("VCL app", "Tên việc cần làm : "+ tasks.getName()   );
 
                 }
             }
