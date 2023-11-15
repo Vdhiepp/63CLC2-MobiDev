@@ -17,8 +17,8 @@ public class QuocGiaPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        QuocGia quocGia = quocGiaList.get(position);
-        QuocGiaFragment quocGiaFragment = new QuocGiaFragment(quocGia);
+        QuocGia quocGiaX = quocGiaList.get(position);
+        QuocGiaFragment quocGiaFragment = new QuocGiaFragment(quocGiaX);
         return quocGiaFragment;
     }
 

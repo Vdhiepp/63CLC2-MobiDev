@@ -27,10 +27,10 @@ public class QuocGiaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View viewFrg = inflater.inflate(R.layout.fragment_quoc_gia, container, false);
-        TextView textViewTenQG = viewFrg.findViewById(R.id.textviewCountyName);
+        TextView textViewTenQG = viewFrg.findViewById(R.id.textViewCountryName);
         TextView textViewDanSo = viewFrg.findViewById(R.id.textViewPopulation);
         ImageView imageView = viewFrg.findViewById(R.id.imageViewFlag);
-        textViewDanSo.setText(quocGia.getCountryName());
+        textViewDanSo.setText("Population: " + String.valueOf(quocGia.getCountryName()));
         textViewDanSo.setText(String.valueOf(quocGia.getPopulation() ) );
         int resID = viewFrg.getResources().getIdentifier(quocGia.getCountryFlag(),
                 "mipmap", viewFrg.getContext().getPackageName());
