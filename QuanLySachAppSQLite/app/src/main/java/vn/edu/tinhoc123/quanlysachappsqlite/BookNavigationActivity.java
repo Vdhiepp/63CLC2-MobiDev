@@ -1,4 +1,4 @@
-package vn.edu.tinhoc123.bookmanappsqlite;
+package vn.edu.tinhoc123.quanlysachappsqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,9 +28,11 @@ public class BookNavigationActivity extends AppCompatActivity {
 
         Button btnNext = findViewById(R.id.btnTiepTheo);
         Button btnFirst = findViewById(R.id.btnDauTien);
+        Button btnEnd = findViewById(R.id.btnCuoiCung);
 
         btnNext.setOnClickListener(xulyNext);
         btnFirst.setOnClickListener(xulyFirst);
+        btnEnd.setOnClickListener(xulyEnd);
     }//het Create
     public void CapNhatManHinhTheoConTro(){
 
@@ -44,8 +46,14 @@ public class BookNavigationActivity extends AppCompatActivity {
         //đặt vào các điều khiển ???
         EditText edMaSach = findViewById(R.id.edMaSach);
         EditText edTenSach = findViewById(R.id.edTenSach);
+        EditText edSoTrang = findViewById(R.id.edSoTrang);
+        EditText edGiaSach = findViewById(R.id.edGiaSach);
+        EditText edMoTa = findViewById(R.id.edMoTa);
         edMaSach.setText(String.valueOf(maSach));
         edTenSach.setText(tenSach);
+        edSoTrang.setText(soTrang);
+        edGiaSach.setText(String.valueOf(gia));
+        edMoTa.setText(moTa);
     }
     //==========CÁC BỘ LẮNG NGHE=========================================
     View.OnClickListener xulyNext = new View.OnClickListener() {
@@ -63,6 +71,14 @@ public class BookNavigationActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             controBanGhi.moveToFirst();
+            //lấy dữ liệu và cập nhật lên màn hình
+            CapNhatManHinhTheoConTro();
+        }
+    };
+    View.OnClickListener xulyEnd = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            controBanGhi.isLast();
             //lấy dữ liệu và cập nhật lên màn hình
             CapNhatManHinhTheoConTro();
         }
