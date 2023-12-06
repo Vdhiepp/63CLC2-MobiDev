@@ -48,16 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 LoginActivity.class);
         startActivity(intent);
     }
-
-    private final ActivityResultLauncher<Intent> questionActivityResultLauncher =
-            registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
-                    result -> {
-                        if (result.getResultCode() == RESULT_OK) {
-                            // Xử lý kết quả từ Activity con ở đây
-                            Intent data = result.getData();
-                            // ...
-                        }
-                    });
     //Hàm bắt đầu câu hỏi qua activity question
     private void startQuestion(){
         Category category = (Category) spinnerCategory.getSelectedItem();
@@ -68,8 +58,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("idcategories", categoryID);
         intent.putExtra("categoriesname", categoryName);
         //sử dụng startActivityForResult để có thể nhận lại dữ liệu kết quả trả về thông báo qua phương thức onActivityResult()
-        //startActivityForResult(intent,REQUEST_CODE_QUESTION);
-        questionActivityResultLauncher.launch(intent);
+        startActivityForResult(intent,REQUEST_CODE_QUESTION);
     }
 
     //phương thức ánh xạ id

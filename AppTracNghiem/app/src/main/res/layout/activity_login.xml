@@ -18,6 +18,44 @@
 
     </FrameLayout>
 
+    <FrameLayout
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="197dp"
+        android:background="@drawable/icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
