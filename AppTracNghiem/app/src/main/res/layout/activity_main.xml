@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E3F5E3"
+    android:background="#DDEFFD"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="30dp"
+        android:textSize="50dp"
         android:textStyle="bold"
         android:textColor="#3F51B5"
         android:layout_marginTop="100dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         android:text="Trắc nghiệm" />
     <Spinner
         android:id="@+id/spinner_category"
@@ -33,14 +33,28 @@
         android:layout_marginTop="50dp"
         android:textStyle="bold"
         android:textSize="25dp"
-        android:textColor="#673AB7"/>
+        android:textColor="#2196F3"/>
+
     <Button
         android:id="@+id/bt_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
+        android:background="@color/blue_light"
+        android:onClick="sangManHinhCauHoi"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
         android:text="Bắt đầu"
-        android:backgroundTint="#009688"/>
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="100dp"
+        android:onClick="sangManHinhLogin"
+        android:text="Back" />
 
 </LinearLayout>
