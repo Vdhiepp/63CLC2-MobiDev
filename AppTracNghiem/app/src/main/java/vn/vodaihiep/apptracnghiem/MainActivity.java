@@ -27,22 +27,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AnhXa();
-        //Load chủ đề
-        loadCategories();
-        //click bắt đầu
-        buttonStartQuestion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startQuestion();
-            }
-        });
+//        AnhXa();
+//        //Load chủ đề
+//        loadCategories();
+//        //click bắt đầu
+//        buttonStartQuestion.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startQuestion();
+//            }
+//        });
     }
-//    public void sangManHinhCauHoi(View v){
-//        Intent intent = new Intent( getBaseContext(),
-//                QuestionActivity.class);
-//        startActivity(intent);
-//    }
+    public void sangManHinhCauHoi(View v){
+        Intent intent = new Intent( getBaseContext(),
+                QuestionActivity.class);
+        startActivity(intent);
+    }
     public void sangManHinhLogin(View v){
         Intent intent = new Intent(getBaseContext(),
                 LoginActivity.class);
