@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_back_main"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="@color/btn"
+        android:onClick="sangManHinhMain"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="123dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/logo1"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:text="Chủ Đề"
+        android:textColor="@color/text"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="122dp"
+
+        android:textColor="@color/phu"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt_toan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="137dp"
+        android:background="@color/btn"
+        android:onClick="sangManHinhCauHoi"
+        android:padding="15dp"
+        android:text="Toán Học"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt_ly"
+        android:layout_width="128dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="17dp"
+        android:background="@color/btn"
+        android:padding="15dp"
+        android:text="Vật Lý"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_toan"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt_hoa"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="104dp"
+        android:background="@color/btn"
+        android:padding="15dp"
+        android:text="Hóa Học"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout9"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout10"
+        app:layout_constraintTop_toBottomOf="@+id/bt_ly"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="198dp"
+        android:layout_height="169dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/ban"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout6"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout10"
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/icon1"
+        app:layout_constraintBottom_toTopOf="@+id/bt_ly"
+        app:layout_constraintEnd_toStartOf="@+id/bt_toan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout9"
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/icon1"
+        app:layout_constraintBottom_toTopOf="@+id/bt_ly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_high_score"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/icon2"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="198dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/kinh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/bt_hoa"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

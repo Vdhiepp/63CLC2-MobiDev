@@ -1,8 +1,8 @@
 package vn.vodaihiep.apptracnghiem.model;
 
 public class Category {
-    private int id;
-    private String name;
+    int id;
+    String name;
     public Category(){}
 
     public Category(String name) {
