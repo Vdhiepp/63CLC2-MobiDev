@@ -6,4 +6,9 @@
     <color name="btn">#24536B</color>
     <color name="text">#059F78</color>
     <color name="phu">#78C48F</color>
+    <color name="main_hoa">#F3F0EC</color>
+    <color name="main_ly">#224B22</color>
+    <color name="top_hoa">#927CB1</color>
+    <color name="top_ly">#EEFDD1</color>
+
 </resources>

@@ -10,22 +10,57 @@
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:background="@drawable/login_bg_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="80dp"
-        android:layout_height="183dp"
-        android:background="@drawable/den"
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trắc nghiệm"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"></FrameLayout>
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toán-Lý-Hóa"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/btn"
+        android:textSize="40dp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
 
     <FrameLayout
         android:layout_width="121dp"
@@ -41,34 +76,23 @@
         tools:ignore="MissingConstraints"></FrameLayout>
 
     <FrameLayout
+        android:id="@+id/frameLayout11"
         android:layout_width="407dp"
         android:layout_height="144dp"
         android:background="@drawable/ban1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in"
-        tools:ignore="MissingConstraints">
-    </FrameLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:text="Sign In"
-        android:textColor="@color/white"
-        android:textSize="70dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
-        app:layout_constraintStart_toStartOf="@+id/frameLayout"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"></FrameLayout>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="232dp"
         android:layout_height="171dp"
+
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout"
         app:srcCompat="@drawable/logo1" />
@@ -79,17 +103,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:startIconDrawable="@drawable/ic_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter email"
-            android:textColor="@color/text"
-            android:inputType="textEmailAddress" />
+            android:hint="Nhập email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -107,9 +132,10 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter password"
+            android:hint="Nhập mật khẩu"
             android:textColor="@color/text"
             android:inputType="textPassword" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -117,11 +143,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:background="@color/btn"
+        android:background="@drawable/btn_bg"
         android:onClick="sangManHinhChinh"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:text="Sign In"
+        android:text="Đăng nhập"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"

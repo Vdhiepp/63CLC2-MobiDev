@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 " 'Kiến trúc và thiết kế phần mềm', " +
                 " 78, " +
                 " 8.5, " +
-                "'Tài liệu học tâpj các Mẫu thiết kế phần mềm ' " +
+                "'Tài liệu học tâp các Mẫu thiết kế phần mềm ' " +
                 ")";
         dbSach.execSQL(sqlThem2);
 

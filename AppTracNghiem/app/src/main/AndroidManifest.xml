@@ -13,16 +13,19 @@
         android:theme="@style/Theme.AppTracNghiem"
         tools:targetApi="31">
         <activity
+            android:name=".EndActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionChemistryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPhysicsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChoiceActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".QuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +33,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

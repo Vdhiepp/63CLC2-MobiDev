@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/main"
+    tools:context=".EndActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:text="Chúc mừng bạn đã hoàn thành tất các câu hỏi" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/main_ly"
+        android:layout_marginBottom="50dp"
+        android:text="Điểm số của bạn là:" />
+    <TextView
+        android:id="@+id/tv_diem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="100dp"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:text="100" />
+    <Button
+        android:id="@+id/btn_quay_lai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Quay lại"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hoa1"/>
+</LinearLayout>

@@ -4,18 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main"
+    android:background="@color/main_ly"
     tools:context=".QuestionActivity">
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="413dp"
-        android:layout_height="151dp"
-        android:background="@drawable/login_bg_top2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></FrameLayout>
 
     <TextView
         android:id="@+id/tv_countdown"
@@ -25,7 +15,7 @@
         android:layout_marginEnd="40dp"
         android:freezesText="true"
         android:text="05 : 00"
-        android:textColor="@color/white"
+        android:textColor="@color/top_ly"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,14 +26,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:freezesText="true"
         android:text="Điểm : 0"
-        android:textColor="@color/white"
+        android:textColor="@color/top_ly"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -52,7 +41,7 @@
         android:layout_marginTop="5dp"
         android:freezesText="true"
         android:text="Câu hỏi : "
-        android:textColor="@color/white"
+        android:textColor="@color/top_ly"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_view_score"
@@ -66,11 +55,12 @@
         android:layout_marginTop="5dp"
         android:freezesText="true"
         android:text="1"
-        android:textColor="@color/white"
+        android:textColor="@color/top_ly"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_view_score"
         tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/tv_category"
         android:layout_width="wrap_content"
@@ -78,8 +68,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:freezesText="true"
-        android:text="Chủ đề : Toán học"
-        android:textColor="@color/white"
+        android:text="Chủ đề : Vật Lý"
+        android:textColor="@color/top_ly"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_question_id"
@@ -89,89 +79,45 @@
         android:id="@+id/tv_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="200dp"
         android:text="Giải phương trình sau: x^2 - 4x + 4 = 0"
         android:textAlignment="center"
-        android:textColor="@color/text"
+        android:textColor="@color/top_ly"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <FrameLayout
-        android:id="@+id/frameLayout7"
-        android:layout_width="59dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="128dp"
-        android:background="@drawable/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ly1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="112dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/ly2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"></FrameLayout>
 
     <FrameLayout
-        android:layout_width="150dp"
-        android:layout_height="168dp"
-        android:layout_marginTop="580dp"
-        android:layout_marginEnd="280dp"
-        android:background="@drawable/cau"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"></FrameLayout>
-
-    <FrameLayout
-        android:layout_width="59dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/icon1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        tools:ignore="MissingConstraints"></FrameLayout>
-
-    <FrameLayout
-        android:layout_width="102dp"
-        android:layout_height="87dp"
-        android:layout_marginEnd="71dp"
-        android:background="@drawable/icon2"
+        android:layout_width="120dp"
+        android:layout_height="122dp"
+        android:background="@drawable/ly3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.767"
-        tools:ignore="MissingConstraints"></FrameLayout>
-
-    <FrameLayout
-        android:layout_width="106dp"
-        android:layout_height="107dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/cay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_next"
-        tools:ignore="MissingConstraints"></FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frameLayout8"
-        android:layout_width="83dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="76dp"
-        android:background="@drawable/cay"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_next"
-        tools:ignore="MissingConstraints"></FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="248dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="620dp"
-        android:background="@drawable/ban1"
-        app:layout_constraintStart_toEndOf="@+id/frameLayout8"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
         tools:ignore="MissingConstraints"></FrameLayout>
 
     <RadioGroup
@@ -192,10 +138,8 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="A. x = 2"
-            android:tag="1"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:onClick="onRadioButtonClicked"/>
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/radio_bt2"
@@ -203,10 +147,8 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="B. x = 4"
-            android:tag="2"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:onClick="onRadioButtonClicked"/>
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/radio_bt3"
@@ -214,10 +156,8 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="C. x = -2"
-            android:tag="3"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:onClick="onRadioButtonClicked"/>
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/radio_bt4"
@@ -225,10 +165,8 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="D. x = -4"
-            android:tag="4"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:onClick="onRadioButtonClicked"/>
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </RadioGroup>
 
     <Button
@@ -238,18 +176,16 @@
         android:layout_marginStart="135dp"
         android:layout_marginEnd="135dp"
         android:layout_marginBottom="150dp"
-        android:background="@color/btn"
+        android:background="@color/top_ly"
         android:freezesText="true"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:text="Xác nhận"
-        android:textColor="@color/white"
+        android:textColor="@color/main_ly"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
