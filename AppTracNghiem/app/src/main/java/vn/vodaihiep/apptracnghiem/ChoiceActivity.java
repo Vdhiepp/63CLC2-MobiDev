@@ -31,6 +31,7 @@ public class ChoiceActivity extends AppCompatActivity {
     public void sangManHinhHoaHoc(View v){
         Intent intent = new Intent( getBaseContext(),
                 QuestionChemistryActivity.class);
+
         startActivity(intent);
     }
 }

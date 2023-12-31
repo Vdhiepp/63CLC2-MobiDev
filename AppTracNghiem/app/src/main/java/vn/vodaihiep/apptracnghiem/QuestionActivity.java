@@ -21,6 +21,7 @@ public class QuestionActivity extends AppCompatActivity {
     TextView countDown;
     int diem = 0; // Biến để lưu điểm
     TextView tvDiem; // TextView để hiển thị điểm
+    int selectedOption = -1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,11 +73,9 @@ public class QuestionActivity extends AppCompatActivity {
             if (!contro.isLast()) {
                 contro.moveToNext();
                 CapNhatManHinh();
-            } else {
+            } else
                 // Nếu là câu hỏi cuối cùng, hiển thị điểm và chuyển đến EndActivity
                 showScoreAndFinish();
-
-            }
         }
     };
 
@@ -131,7 +130,7 @@ public class QuestionActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         if (checked) {
-            int selectedOption = Integer.parseInt(view.getTag().toString());
+            selectedOption = Integer.parseInt(view.getTag().toString());
 
             checkAnswer(selectedOption);
 

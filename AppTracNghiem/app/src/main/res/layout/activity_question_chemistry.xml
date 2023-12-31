@@ -147,7 +147,9 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="A. x = 2"
+            android:tag="1"
             android:textColor="@color/black"
+            android:onClick="onRadioButtonClicked"
             android:textSize="18dp" />
 
         <RadioButton
@@ -156,7 +158,9 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="B. x = 4"
+            android:tag="2"
             android:textColor="@color/black"
+            android:onClick="onRadioButtonClicked"
             android:textSize="18dp" />
 
         <RadioButton
@@ -165,7 +169,9 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="C. x = -2"
+            android:tag="3"
             android:textColor="@color/black"
+            android:onClick="onRadioButtonClicked"
             android:textSize="18dp" />
 
         <RadioButton
@@ -174,7 +180,9 @@
             android:layout_height="wrap_content"
             android:freezesText="true"
             android:text="D. x = -4"
+            android:tag="4"
             android:textColor="@color/black"
+            android:onClick="onRadioButtonClicked"
             android:textSize="18dp" />
     </RadioGroup>
 
