@@ -150,7 +150,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
     private void showScoreAndFinish() {
         updateDiemTextView();
-        // Tạo Intent để chuyển sang KetThucActivity
+        // Chuyển sang KetThucActivity
         Intent intent = new Intent(QuestionActivity.this, EndActivity.class);
         // Truyền điểm sang KetThucActivity
         intent.putExtra("DIEM", diem);

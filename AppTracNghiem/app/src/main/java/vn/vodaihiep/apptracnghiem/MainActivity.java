@@ -6,9 +6,6 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     SQLiteDatabase dbQuestion;
@@ -74,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         dbQuestion.execSQL(sqlCau14);
         String sqlCau15 = "INSERT INTO QUESTIONS VALUES(15, 'Tính giá trị của √(4 + √3) - √(4 - √3)', 'A. 2', 'B. √2', 'C. 1', 'D. √3', 4)";
         dbQuestion.execSQL(sqlCau15);
-        String sqlCau16 = "INSERT INTO QUESTIONS VALUES(16, 'Phương trình hóa học biểu diễn sự tạo ra nước (H₂O) từ hydro (H₂) và ôxi (O₂) là gì?', 'A. 2H₂ + O₂ → 2H₂O', 'B. H₂ + O₂ → H₂O', 'C. H₂O → H₂ + O₂', 'D. 2H₂O → 2H₂ + O₂', 1)";
+        String sqlCau16 = "INSERT INTO QUESTIONS VALUES(16, 'Giải phương trình sau: 2x² + 5x - 3 = 0', 'A. x = 1', 'B. x = -3', 'C. x = 0.5', 'D. x = -1', 2)";
         dbQuestion.execSQL(sqlCau16);
         String sqlCau17 = "INSERT INTO QUESTIONS VALUES(17, 'Tính giá trị của tan(3π/4)', 'A. 0', 'B. -1', 'C. 1', 'D. √3', 2)";
         dbQuestion.execSQL(sqlCau17);

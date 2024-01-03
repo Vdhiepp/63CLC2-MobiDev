@@ -1,57 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@color/main"
+    android:orientation="vertical"
     tools:context=".EndActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Chúc mừng bạn đã hoàn thành tất các câu hỏi"
+        android:textColor="@color/text"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColor="@color/text"
-        android:text="Chúc mừng bạn đã hoàn thành tất các câu hỏi" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="30dp"
+        android:text="Điểm số của bạn là:"
         android:textColor="@color/main_ly"
-        android:layout_marginBottom="50dp"
-        android:text="Điểm số của bạn là:" />
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_diem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints"/>
+
     <TextView
         android:id="@+id/tv_diem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         android:gravity="center"
-        android:textSize="100dp"
+        android:text=""
         android:textColor="#F44336"
+        android:textSize="100dp"
         android:textStyle="bold"
-        android:text="100" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_quay_lai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"/>
+
     <Button
         android:id="@+id/btn_quay_lai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
         android:background="@drawable/btn_bg"
+        android:onClick="sangManHinhChinh"
+        android:paddingStart="40dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="20dp"
+        android:text="Quay lại"
         android:textColor="@color/white"
         android:textSize="20dp"
-        android:text="Quay lại"/>
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"/>
+
     <FrameLayout
+        android:id="@+id/frameLayout13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/hoa1"/>
-</LinearLayout>
+        android:background="@drawable/hoa1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
