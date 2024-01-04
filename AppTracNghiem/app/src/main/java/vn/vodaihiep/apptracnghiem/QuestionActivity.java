@@ -89,20 +89,22 @@ public class QuestionActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 countDown.setText("Hết thời gian!");
-                redirectToEndActivity();
+                toEndActivity();
             }
         }.start();
     }
-    private void redirectToEndActivity() {
+    private void toEndActivity() {
         Intent intent = new Intent(QuestionActivity.this, EndActivity.class);
         startActivity(intent);
 
         finish();
     }
     private void updateCountdownText(long millisUntilFinished) {
+        // Chuyển đổi thời gian từ mili giây thành phút và giây
         int minutes = (int) (millisUntilFinished / 1000) / 60;
         int seconds = (int) (millisUntilFinished / 1000) % 60;
 
+        // Định dạng thời gian thành chuỗi để hiển thị
         String timeLeftFormatted = String.format("%02d:%02d", minutes, seconds);
         countDown.setText(timeLeftFormatted);
     }
@@ -120,10 +122,9 @@ public class QuestionActivity extends AppCompatActivity {
         int correctAnswer = contro.getInt(6);
 
         if (selectedOption == correctAnswer) {
-            diem+= 10; // Tăng điểm lên 10 nếu tùy chọn đã chọn là đúng
+            diem+= 10; // Tăng điểm nếu đáp án chọn là đúng
         }
 
-        // Hiển thị điểm được cập nhật
         updateDiemTextView();
     }
     public void onRadioButtonClicked(View view) {
@@ -150,9 +151,8 @@ public class QuestionActivity extends AppCompatActivity {
     }
     private void showScoreAndFinish() {
         updateDiemTextView();
-        // Chuyển sang KetThucActivity
         Intent intent = new Intent(QuestionActivity.this, EndActivity.class);
-        // Truyền điểm sang KetThucActivity
+        // Truyền điểm sang EndActivity
         intent.putExtra("DIEM", diem);
         startActivity(intent);
     }

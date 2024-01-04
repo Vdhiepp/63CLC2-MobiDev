@@ -14,11 +14,11 @@ public class EndActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end);
         //Lấy điểm từ Intent
-        int diem = getIntent().getIntExtra("DIEM", 0);
+        //int diem = getIntent().getIntExtra("DIEM", 0);
 
         // Hiển thị điểm
-        TextView tvDiem = findViewById(R.id.tv_diem);
-        tvDiem.setText(diem);
+        //TextView tvDiem = findViewById(R.id.tv_diem);
+        //tvDiem.setText(diem);
 
     }
     // Xử lý nút quay lại

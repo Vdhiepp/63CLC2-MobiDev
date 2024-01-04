@@ -184,7 +184,7 @@
         android:layout_marginStart="135dp"
         android:layout_marginEnd="135dp"
         android:layout_marginBottom="150dp"
-        android:background="@color/top_ly"
+        android:background="@drawable/btn_bg3"
         android:freezesText="true"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
