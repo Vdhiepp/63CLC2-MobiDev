@@ -70,6 +70,7 @@ Cho người dùng làm trắc nghiệm 20 câu với thời gian giới hạn �
 
 #### Tạo Cơ Sở Dữ Liệu
 </br>
+
 - dbQuestion = openOrCreateDatabase("Question.db", MODE_PRIVATE, null); //Dòng này mở hoặc tạo một cơ sở dữ liệu SQLite có tên là "Question.db" ở chế độ riêng tư.
 - dbQuestion.execSQL("DROP TABLE IF EXISTS QUESTIONS"); //Xóa bảng có tên "QUESTIONS" nếu nó đã tồn tại. Điều này được thực hiện để đảm bảo bắt đầu mới.
 - String sqlTaoBangQuestion = "CREATE TABLE QUESTIONS(QuestionID integer PRIMARY KEY, " + "Question text, " + "Option1 text, " + "Option2 text, " + "Option3 text, " + "Option4 text, " + "Answer integer )";
